@@ -26,17 +26,7 @@ class App
             
             require $archivoController;
             $controller = new $url[0];
-            //Se obtiene el número de param
-            $nparam = sizeof($url);
-
-            // si se llama a un método
-
-            if ($nparam > 1) {
-                //hay parámetros
-            } else {
-                // si se llama a un controlador
-                $controller->render();
-            }
+            $controller->render();
         } else {
             //controllar errores
             echo 'Error al cargar el recurso';
