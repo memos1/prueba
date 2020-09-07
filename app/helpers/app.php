@@ -48,7 +48,8 @@ class App
                 $controller->render();
             }
         } else {
-            $controller = new Errores();
+            //controllar errores
+            echo 'Error al cargar el recurso';
         }
     }
 }
