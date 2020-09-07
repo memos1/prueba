@@ -5,6 +5,6 @@ class View
 {
     public function renderView($ruta)
     {
-        require_once 'app/views/'.$ruta.'.php';
+        require_once _VIEW_PATH_.$ruta.'.php';
     }
 }
