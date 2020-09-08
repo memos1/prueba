@@ -23,9 +23,9 @@ class App
         }
         
         if (file_exists($archivoController)) {
-            
+            $ruta = 'App\\Controllers\\'.$url[0];
             require $archivoController;
-            $controller = new $url[0];
+            $controller = new $ruta;
             $controller->render();
         } else {
             //controllar errores

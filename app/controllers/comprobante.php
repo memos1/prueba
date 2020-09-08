@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 use App\Helpers\Controller;
 
-class Usuarios extends Controller {
+class Comprobante extends Controller {
     
     function __construct()
     {
